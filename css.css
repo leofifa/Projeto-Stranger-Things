@@ -1,0 +1,32 @@
+body{
+    background:black;
+}
+#logo{
+    xposition:absolute;
+    margin-left:32%;
+    margin-top:0;
+    margin-bottom:5px;
+}
+
+
+nav ul li a{
+    border-right:0px;
+    margin-left:27%;
+    color:red;
+    text-decoration:none;
+    
+}
+nav ul li{
+    xmargin: 60px 7px 0 15px;
+    font-family:verdana;
+    border-right:2px solid red;
+    padding-right:3%;
+    text-decoration: none;
+    float:left;
+}
+
+nav{
+    text-decoration:none;
+    display:inline;
+    
+}
