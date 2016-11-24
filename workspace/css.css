@@ -1,0 +1,39 @@
+body{
+    font-family: "Lato", sans-serif;
+}
+
+#1{
+    float:left;
+}
+
+#2{
+    float:left;
+}
+
+#3{
+    float:right;
+}
+
+#partebaixo{
+    clear:both;
+    margin-left:10px;
+}
+#cinza {
+    color:blue;
+    
+}
+
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo p iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

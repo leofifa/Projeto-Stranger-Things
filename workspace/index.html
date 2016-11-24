@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css.css" />
+        <title>Stranger Things</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="icon" 
+		      type="image/png" 
+		      href="iconw.png" />
+		      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+          </script>
+          <script>
+          $(document).ready(function(){
+            $("li").mouseenter(function(){
+            $("li").css("color", "black");
+            $("ul").removeClass("w3-black");
+            $("ul").addClass("w3-yellow");
+          });
+          $("li").mouseout(function(){
+            $("li").css("color", "white");
+            $("ul").removeClass("w3-yellow");
+            $("ul").addClass("w3-black");
+          });
+          });  
+          </script>
+
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top" >
+        <ul class="w3-navbar w3-black w3-left-align">
+          <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="w3-padding-large" href="javascript:void(0)" onClick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          </li>
+          <li><a href="#" class="w3-hover-white w3-hover-text-yellow w3-padding-large">HOME</a></li>
+          <li class="w3-hide-small"><a href="#serie" class="w3-hover-white w3-hover-text-yellow w3-padding-large">A SÉRIE</a></li>
+          <li class="w3-hide-small"><a href="#teorias" class=" w3-hover-white w3-hover-text-yellow w3-padding-large">TEORIAS</a></li>
+          <li class="w3-hide-small"><a href="#contato" class=" w3-hover-white w3-hover-text-yellow w3-padding-large">CONTATO</a></li>
+          <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-hover-white w3-hover-text-yellow w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+        </ul>
+        </div>
+        
+        <!-- Navbar em telas pequenas -->
+        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+          <ul class="w3-navbar w3-left-align w3-black">
+            <li><a class="w3-padding-large" href="#serie">A SÉRIE</a></li>
+            <li><a class="w3-padding-large" href="#teorias">TEORIAS</a></li>
+            <li><a class="w3-padding-large" href="#contato">CONTATO</a></li>
+            <li><a class="w3-padding-large" href="#">HOME</a></li>
+          </ul>
+        </div>
+        
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        
+         
+        
+          <!-- SÉRIE -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="serie">
+            <h2 class="w3-wide">A SÉRIE</h2>
+            <p class="cinza"><i>Stranger Things</i></p>
+            <p class="w3-justify"> Stranger Things é uma websérie americana de suspense, ficcão científica e drama criada pelos irmãos Matt e Ross Duffer e distribuída pela Netflix. 
+            A série se passa no ano de 1983 e é altamente tematizada pelos elementos culturais da década, com uma trilha sonora remetente aos marcantes sintetizadores da época e inúmeras referências a obras de Steven Spielberg, John Carpenter e Stephen King, considerados as grandes inspirações dos irmãos Duffer para a realização do projeto. Na trama, um garoto desaparece misteriosamente na pequena cidade de Hawkins, Indiana, e faz seus amigos partirem por sua busca, que no caminho encontram uma estranha menina com poderes telecinéticos.
+            A primeira temporada foi disponibilizada no dia 15 de julho de 2016 e possui oito episódios com cerca de uma hora cada, sob o roteiro e direção dos gêmeos Matt e Ross Duffer e produção de Shawn Levy. Ela recebeu críticas muito positivas pela sua caracterização, ritmo, atmosfera, atuação, trilha sonora, direção, roteiro e as homenagens a filmes do gênero dos anos 1980. Stranger Things originalmente chamaria-se Montauk e decorreria na cidade de mesmo nome do estado de Nova Iorque, no entanto, acabou por ser inteiramente filmada em Jackson, Geórgia. 
+            Em 31 de agosto de 2016, a Netflix confirmou oficialmente a segunda temporada de Stranger Things, que será disponibilizada em 2017 e contara com 9 episódios.    
+            </p>
+            <div class="boxVideo">
+            <p><iframe width="770" height="480" src="https://www.youtube.com/embed/AyxZeUZOZbM" frameborder="0" allowfullscreen></iframe></p>
+            </div>
+            
+            <div id="playlist">
+            <h2 class="w3-wide">Soundtrack Stranger Things</>
+            <iframe src="https://embed.spotify.com/?uri=spotify:user:netflixmusic:playlist:2X6z5kU0wMnKoar8i1RN6B" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            
+            <h2 class="w3-wide">CONHEÇA OS PERSONAGENS</h2>
+            
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                    <p>Joyce Byers (Winona Ryder)</p>
+                    <img src="joyce.jpg" class="w3-round w3-margin-bottom" alt="Joyce" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Jim Hopper (David Harbour)</p>
+                    <img src="jim.jpg" class="w3-round w3-margin-bottom" alt="Jim" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Dr. Martin Brenner (Matthew Modine)</p>
+                    <img src="dr.jpg" class="w3-round" alt="Martin" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Mike Wheeler (Finn Wolfhard)</p>
+                    <img src="mike.jpg" class="w3-round" alt="Mike" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Eleven (Millie Bobby Brown)</p>
+                    <img src="eleven.jpg" class="w3-round" alt="Eleven" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Dustin Henderson (Gaten Matarazzo)</p>
+                    <img src="dustin.jpg" class="w3-round" alt="Dustin" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Lucas Sinclair (Caleb McLaughlin)</p>
+                    <img src="lucas.jpg" class="w3-round" alt="Lucas" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Jonathan Byers (Charlie Heaton)</p>
+                    <img src="jonathan.png" class="w3-round" alt="Jonathan" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Nancy Wheeler (Natalia Dyer)</p>
+                    <img src="nancy.jpg" class="w3-round" alt="Nancy" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Will Byers (Noah Schnapp)</p>
+                    <img src="will.jpg" class="w3-round" alt="Will" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Steve Harrington (Joe Keery)</p>
+                    <img src="steve.jpg" class="w3-round" alt="Steve" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Karen Wheeler (Cara Buono)</p>
+                    <img src="karen.png" class="w3-round" alt="Karen" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Barbara Holland (Shannon Purser)</p>
+                    <img src="barb.jpg" class="w3-round" alt="Barbara" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Sr. Scott Clarke (Randall P. Havens)</p>
+                    <img src="scott.jpg" class="w3-round" alt="Scott" style="width:60%">
+                </div>
+                
+            </div>
+        </div>
+        
+          <!-- Teorias -->
+        
+          <div class="w3-black" id="teorias">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+              <h2 class="w3-wide w3-center">TEORIAS</h2>
+              <p class="w3-opacity w3-center"><i>ATENÇÃO: CONTÉM SPOILERS</i></p><br>
+        
+              <div class="w3-row-padding w3-padding-32" style="margin:0 -16px" id="1">
+                <div class="w3-third w3-margin-bottom">
+                  <img src="eleventeoria.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Eleven é o Demogorgon?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom" id="2">
+                  <img src="eldemo.jpg" alt="Paris" style="width:100%;" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Demogorgon é a mãe de Eleven?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal2').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom" id="3">
+                  <img src="el.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>A Onze ajudou o grupo escapar do Mundo Invertido?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal3').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <xdiv id="partebaixo">
+                 <div class="w3-third w3-margin-bottom">
+                  <img src="demo.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Universos Paralelos?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal4').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                  <img src="willpia.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Will vai se transformar em um monstro?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal5').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                  <img src="willinvertido.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Viagem no tempo?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal6').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                </div>
+                <div id="partebaixo">
+                
+                <div class="w3-third w3-margin-bottom">
+                  <img src="lanterna.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>O Hopper está trabalhando para o governo?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal8').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                  <img src="barbviva.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Barb está viva?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal10').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                  <img src="ovo.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                  <div class="w3-container w3-white">
+                    <p><b>Outro portal será aberto?</b></p>
+                    <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal9').style.display='block'">Leia</button>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        
+          <!-- Teorias -->
+          <div id="ticketModal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Eleven é o Demogorgon?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="eldemo.jpg" style="width:100%">
+              
+                <p><label></i> Uma das teorias mais famosas sobre a série é, obviamente, sobre a Onze. A personagem apresentou um nível de poder impressionante durante a primeira temporada, mas, ao que tudo indica, não mostrou toda sua extensão. Essa teoria fala sobre os poderes da Elle e o monstro do primeiro ano da trama, o Demogorgon.
+                  Segundo a teoria, o Demogorgon seria uma projeção do subconsciente da Elle. Na verdade, alguns levam a teoria mais além e colocam o próprio Mundo Invertido como fruto dos poderes da menina, traumatizada. A especulação leva em conta o primeiro encontro de Elle e o Demogorgon, quando ela estava em um transe profundo para amplificar seus poderes e a relação entre ela, o monstro e o Mundo Invertido durante a temporada.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal2" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal2').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Demogorgon é a mãe de Eleven?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="demo.jpg" style="width:100%">
+              
+                <p><label></i> Ainda sobre as relações entre a Onze e o monstro, alguns acreditam que, na verdade, a mãe da Elle, Terry, é o Demogorgon. Essa teoria acredita que a extensão dos experimentos do programa MKUltra na Terry não foram mostradas, muito menos todas as suas consequências.
+                  Segundo a especulação, o Demogorgon seria uma projeção da consciência da Terry que ficou presa no Mundo Invertido, explicando sua condição catatônica e a relação entre o monstro e a Onze.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal3" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal3').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>A Onze ajudou o grupo escapar do Mundo Invertido?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="polica.jpg" style="width:100%">
+              
+                <p><label></i> Essa é uma ideia bem simples. Considerando que, depois da luta final contra o Demogorgon, a Elle está no Mundo Invertido e que o caminho de volta do Hopper, Joyce e Will não foi mostrado, a menina teria encontrado o grupo e guiado eles até a saída. Isso explicaria o porquê do Hopper deixar o waffle para a Elle no final do episódio e o encontro seria mostrado em um flashback na próxima temporada.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal4" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal4').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Universos Paralelos?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="dragao.jpg" style="width:100%">
+              
+                <p><label></i> Alguns fãs acreditam que a série, a partir de agora, vai explorar outros universos paralelos além do Mundo Invertido, ou seres inteligentes no Mundo Invertido que atacariam o nosso mundo – uma coisa meio Fringe. É bem provável que outros monstros irão aparecer, visto que foram mostrados ovos e indícios de outros seres vivendo no Mundo Invertido.</label></p>
+              </div>
+            </div>
+          </div>
+            <div id="ticketModal5" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal5').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Will vai se transformar em um monstro?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="willpia.jpg" style="width:100%">
+              
+                <p><label></i>Depois de ver o Will vomitando aquela “lesma” e o flash do Mundo Invertido no final do último episódio, muitos fãs acreditam que ele esteja se transformando em um monstro/ser do Mundo Invertido.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal6" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal6').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Viagem no tempo?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="willinvertido.jpg" style="width:100%">
+              
+                <p><label></i> E se, na verdade, o Mundo Invertido não fosse um universo paralelo, mas o futuro do planeta? Nessa especulação, os fãs acreditam que o Mundo Invertido é a Terra no futuro e que a série fala sobre viagem no tempo, não dimensões.</label></p>
+              </div>
+            </div>
+          </div>
+                    <div id="ticketModal7" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal7').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>A filha do Hopper não está morta?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="filha.jpg" style="width:100%">
+              
+                <p><label></i>Praticamente confirmada pelo ator, quando ele declarou que a filha do Hopper será melhor explorada na segunda temporada, muitos fãs acreditam que a menina não morreu de câncer. As ideias vão tanto dela ter entrado em contato com o mundo invertido e o governo ter envenenado a menina para esconder o segredo, quanto de ela ainda estar viva.</label></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="ticketModal8" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal8').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>O Hopper está trabalhando para o governo?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="lanterna.jpg" style="width:100%">
+              
+                <p><label></i>Bem simples também, nessa especulação os fãs acreditam que, depois do acordo que ele fez para entrar no Mundo Invertido para salvar o Will, o Hopper agora estaria trabalhando para o governo. Isso foi deixado implícito no final da temporada. A ideia vai ainda mais além, colocando que ele estaria infiltrado para tentar derrubar a organização.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal9" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal9').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Outro portal será aberto?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="ovo.jpg" style="width:100%">
+              
+                <p><label></i>Como a Elle aparentemente está viva – e teremos uma segunda temporada – é praticamente certo que um novo portal será aberto para o Mundo Invertido no próximo ano da série.</label></p>
+              </div>
+            </div>
+          </div>
+          <div id="ticketModal10" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-8">
+              <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal10').style.display='none'"
+               class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"></i>Barb está viva?</h2>
+              </header>
+              <div class="w3-container">
+                <img src="barbviva.jpg" style="width:100%">
+              
+                <p><label></i>Essa não é teoria, é apenas realidade. Muitos querem acreditar que a Barb continua viva, de alguma forma, no Mundo Invertido. Mas, de acordo com a própria produção, a moça morreu mesmo. Aceitem e bola pra frente.</label></p>
+              </div>
+            </div>
+          </div>
+          
+        
+          <!--Contato -->
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contato">
+            <h2 class="w3-wide w3-center">CONTATO</h2>
+            <p class="w3-opacity w3-center"><i>Gostou? Deixe uma mensagem!</i></p>
+            <div class="w3-row w3-padding-32">
+              <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i></i>Universidade Presbiteriana Mackenzie<br>
+                <i></i>Gabriela Calderoni | 3161041-2 |<br>
+                <i></i>Milton Leonardo    | 3163252-1 |<br>
+                <i></i>Jõao Gabriel       | 3163819-8 |<br>
+              </div>
+              <div class="w3-col m6">
+                <form action="form.asp" target="_blank">
+                  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                  </div>
+                  <input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Message">
+                  <button class="w3-btn w3-section w3-right" type="submit">ENVIAR</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
+
